@@ -3,10 +3,9 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from .database.models import ActorInMovie, db_drop_and_create_all, setup_db, Actor, Movie
 from .auth.auth import AuthError, requires_auth
-import ssl
 
 
-def create_app(test_config=None):
+def create_app():
     app = Flask(__name__)
     setup_db(app)
 
@@ -16,7 +15,7 @@ def create_app(test_config=None):
     # db_drop_and_create_all()
 
     CORS(app, resources={r"/*": {"origins": "*"}})
-    ssl._create_default_https_context = ssl._create_stdlib_context
+    # ssl._create_default_https_context = ssl._create_stdlib_context
 
     @app.after_request
     def after_request(response):
