@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn app:app
+web: gunicorn chaudn-udacity-project:app
