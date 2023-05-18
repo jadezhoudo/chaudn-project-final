@@ -9,11 +9,6 @@ def create_app():
     app = Flask(__name__)
     setup_db(app)
 
-    # Uncomment the following line on the initial run to setup
-    # the required tables in the database
-
-    # db_drop_and_create_all()
-
     CORS(app, resources={r"/*": {"origins": "*"}})
     # ssl._create_default_https_context = ssl._create_stdlib_context
 

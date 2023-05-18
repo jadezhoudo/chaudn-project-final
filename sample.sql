@@ -5,7 +5,7 @@
 -- Dumped from database version 12.2
 -- Dumped by pg_dump version 12.2
 
--- Started on 2020-05-24 02:24:00
+-- Started on 2023-05-01 02:24:00
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -49,7 +49,7 @@ CREATE TABLE public.actor_in_movie (
 );
 
 
-ALTER TABLE public.actor_in_movie OWNER TO postgres;
+ALTER TABLE public.actor_in_movie OWNER TO postgres_deployment_example_u65m_user;
 
 --
 -- TOC entry 204 (class 1259 OID 17281)
@@ -64,7 +64,7 @@ CREATE TABLE public.actors (
 );
 
 
-ALTER TABLE public.actors OWNER TO postgres;
+ALTER TABLE public.actors OWNER TO postgres_deployment_example_u65m_user;
 
 --
 -- TOC entry 203 (class 1259 OID 17279)
@@ -80,7 +80,7 @@ CREATE SEQUENCE public.actors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.actors_id_seq OWNER TO postgres;
+ALTER TABLE public.actors_id_seq OWNER TO postgres_deployment_example_u65m_user;
 
 --
 -- TOC entry 2852 (class 0 OID 0)
@@ -101,7 +101,7 @@ CREATE TABLE public.alembic_version (
 );
 
 
-ALTER TABLE public.alembic_version OWNER TO postgres;
+ALTER TABLE public.alembic_version OWNER TO postgres_deployment_example_u65m_user;
 
 --
 -- TOC entry 206 (class 1259 OID 17292)
@@ -117,7 +117,7 @@ CREATE TABLE public.movies (
 );
 
 
-ALTER TABLE public.movies OWNER TO postgres;
+ALTER TABLE public.movies OWNER TO postgres_deployment_example_u65m_user;
 
 --
 -- TOC entry 205 (class 1259 OID 17290)
@@ -133,7 +133,7 @@ CREATE SEQUENCE public.movies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.movies_id_seq OWNER TO postgres;
+ALTER TABLE public.movies_id_seq OWNER TO postgres_deployment_example_u65m_user;
 
 --
 -- TOC entry 2853 (class 0 OID 0)
@@ -282,7 +282,7 @@ INSERT INTO public.actor_in_movie VALUES(3, 2);
 INSERT INTO public.actor_in_movie VALUES(4, 2);
 
 
--- Completed on 2020-05-24 02:24:00
+-- Completed on 2023-05-01 02:24:00
 
 --
 -- PostgreSQL database dump complete

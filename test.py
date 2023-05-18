@@ -1,17 +1,18 @@
 import os
 import unittest
 import json
+from dotenv import load_dotenv
 from flask_sqlalchemy import SQLAlchemy
 
 from app import create_app
-from database.models import setup_db, Actor, Movie
+from .database.models import setup_db, Actor, Movie
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+load_dotenv(os.path.join(basedir, '.env'))
 
 
 class CastingAgencyTestCase(unittest.TestCase):
-    """This class represents the casting agency test case"""
-
     def setUp(self):
-        """Define test variables and initialize app."""
         self.user_token = os.environ['user_token']
         self.manager_token = os.environ['manager_token']
         self.admin_token = os.environ['admin_token']
@@ -55,11 +56,9 @@ class CastingAgencyTestCase(unittest.TestCase):
 
         self.INVALID_UPDATE_MOVIE = {}
 
-        # binds the app to the current context
         with self.app.app_context():
             self.db = SQLAlchemy()
             self.db.init_app(self.app)
-            # create all tables
             self.db.create_all()
 
     def tearDown(self):

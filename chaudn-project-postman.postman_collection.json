@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "b128975b-d9e8-46a9-b364-8736353dd9c8",
-		"name": "FSND-Capstone Heroku",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "12833321"
+		"_postman_id": "7a210036-c967-4a14-810c-879639d974c0",
+		"name": "chaudn-project-postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -15,12 +14,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors",
-							"protocol": "https",
+							"raw": "{{host}}/actors",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
 							"path": [
 								"actors"
@@ -35,12 +31,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors/1",
-							"protocol": "https",
+							"raw": "{{host}}/actors/1",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
 							"path": [
 								"actors",
@@ -65,12 +58,9 @@
 							}
 						},
 						"url": {
-							"raw": "https://ry-fsnd-capstone.herokuapp.com/actors",
-							"protocol": "https",
+							"raw": "{{host}}/actors",
 							"host": [
-								"ry-fsnd-capstone",
-								"herokuapp",
-								"com"
+								"{{host}}"
 							],
 							"path": [
 								"actors"
@@ -94,11 +84,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/37",
+							"raw": "{{host}}/actors/37",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
 								"37"
@@ -113,11 +102,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/37",
+							"raw": "{{host}}/actors/37",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
 								"37"
@@ -132,11 +120,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies",
+							"raw": "{{host}}/movies",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -150,11 +137,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/1",
+							"raw": "{{host}}/movies/1",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"1"
@@ -178,11 +164,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/movies",
+							"raw": "{{host}}/movies",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -205,11 +190,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/17",
+							"raw": "{{host}}/movies/17",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"17"
@@ -224,11 +208,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/17",
+							"raw": "{{host}}/movies/17",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"17"
@@ -243,7 +226,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "{{authorization}}",
+						"value": "{{userToken}}",
 						"type": "string"
 					}
 				]
@@ -278,11 +261,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors",
+							"raw": "{{host}}/actors",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -296,14 +278,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/2",
+							"raw": "{{host}}/actors/1",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -316,7 +297,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Keira Knightley\",\n\t\"date_of_birth\": \"March 26, 1985\"\n}",
+							"raw": "{\n\t\"name\": \"Keira aaa\",\n\t\"date_of_birth\": \"March 26, 1985\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -324,11 +305,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/actors",
+							"raw": "{{host}}/actors",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -351,14 +331,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/38",
+							"raw": "{{host}}/actors/6",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
-								"38"
+								"6"
 							]
 						}
 					},
@@ -370,14 +349,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/38",
+							"raw": "{{host}}/actors/7",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
-								"38"
+								"7"
 							]
 						}
 					},
@@ -389,11 +367,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies",
+							"raw": "{{host}}/movies",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -407,11 +384,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/1",
+							"raw": "{{host}}/movies/1",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"1"
@@ -435,11 +411,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/movies",
+							"raw": "{{host}}/movies",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -462,11 +437,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/18",
+							"raw": "{{host}}/movies/18",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"18"
@@ -481,11 +455,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/18",
+							"raw": "{{host}}/movies/18",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"18"
@@ -535,11 +508,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors",
+							"raw": "https://render-deployment-example-o0mw.onrender.com/actors",
+							"protocol": "https",
 							"host": [
-								"{{host}}"
+								"render-deployment-example-o0mw",
+								"onrender",
+								"com"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -553,11 +528,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/1",
+							"raw": "{{host}}/actors/1",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
 								"1"
@@ -581,11 +555,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/actors",
+							"raw": "{{host}}/actors",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors"
 							]
@@ -608,11 +581,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/39",
+							"raw": "{{host}}/actors/39",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
 								"39"
@@ -627,14 +599,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/actors/39",
+							"raw": "{{host}}/actors/7",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"actors",
-								"39"
+								"7"
 							]
 						}
 					},
@@ -646,11 +617,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies",
+							"raw": "{{host}}/movies",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -664,11 +634,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/1",
+							"raw": "{{host}}/movies/1",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
 								"1"
@@ -684,7 +653,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"title\": \"Edge of Tomorrow\",\n\t\"duration\": 113,\n\t\"release_year\": 2014,\n\t\"imdb_rating\": 7.9,\n\t\"cast\": [\"Tom Cruise\", \"Emily Blunt\"]\n}",
+							"raw": "{\n\t\"title\": \"Edge of Tomorrow\",\n\t\"duration\": 113,\n\t\"release_year\": 2014,\n\t\"imdb_rating\": 7.9,\n\t\"cast\": [\"Margot Robbie\", \"Anne Hathaway\"]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -692,11 +661,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/movies",
+							"raw": "{{host}}/movies",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies"
 							]
@@ -719,14 +687,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/19",
+							"raw": "{{host}}/movies/3",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
-								"19"
+								"3"
 							]
 						}
 					},
@@ -738,14 +705,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{host}}:{{port}}/movies/19",
+							"raw": "{{host}}/movies/3",
 							"host": [
 								"{{host}}"
 							],
-							"port": "{{port}}",
 							"path": [
 								"movies",
-								"19"
+								"3"
 							]
 						}
 					},
@@ -790,18 +756,6 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"// Parse the response body as JSON\r",
-							"var responseBody = pm.response.json();\r",
-							"\r",
-							"// Extract the tokens from the response body\r",
-							"var adminToken = responseBody.admin_token;\r",
-							"var managerToken = responseBody.manager_token;\r",
-							"var userToken = responseBody.user_token;\r",
-							"\r",
-							"// Set the collection variables\r",
-							"pm.collectionVariables.set(\"adminToken\", adminToken);\r",
-							"pm.collectionVariables.set(\"managerToken\", managerToken);\r",
-							"pm.collectionVariables.set(\"userToken\", userToken);\r",
 							""
 						],
 						"type": "text/javascript"
@@ -809,14 +763,16 @@
 				}
 			],
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}/health",
+					"raw": "{{host}}/health",
 					"host": [
 						"{{host}}"
 					],
-					"port": "{{port}}",
 					"path": [
 						"health"
 					]
@@ -831,48 +787,7 @@
 			"script": {
 				"type": "text/javascript",
 				"exec": [
-					"function setAuth0JWT() {",
-					"  // fill local vars from Postman environment",
-					"  var domain = pm.environment.get(\"domain\");",
-					"  var client_id = pm.environment.get(\"client_id\");",
-					"  var client_secret = pm.environment.get(\"client_secret\");",
-					"  var audience = pm.environment.get(\"audience\");",
-					"",
-					"  // load request object",
-					"  var req = {",
-					"    url: \"https://\" + domain + \"/oauth/token\",",
-					"    method: \"POST\",",
-					"    header: {",
-					"      \"accept\": \"application/json\",",
-					"      \"content-type\": \"application/json\"",
-					"    },",
-					"    body: {",
-					"      mode: 'raw',",
-					"      raw: JSON.stringify(",
-					"        {",
-					"          client_id: client_id,",
-					"          client_secret: client_secret,",
-					"          audience: audience,",
-					"          grant_type: \"client_credentials\",",
-					"        username: \"saitamacoder@gmail.com\",",
-					"        password: \"MinhDua@198\"",
-					"        }",
-					"      )",
-					"    }",
-					"  };",
-					"  ",
-					"  // execute request for JWT, store token, set header",
-					"  pm.sendRequest(req, function (err, res) {",
-					"    pm.environment.set(\"authorization\",res.json().access_token);",
-					"    pm.request.headers.add(",
-					"      {",
-					"        key: \"authorization\",",
-					"        value: pm.environment.get(\"authorization\")",
-					"      }",
-					"    );",
-					"  });",
-					"}",
-					"setAuth0JWT();"
+					""
 				]
 			}
 		},
@@ -889,25 +804,26 @@
 	"variable": [
 		{
 			"key": "host",
-			"value": "http://localhost",
+			"value": "https://render-deployment-example-o0mw.onrender.com",
 			"type": "default"
 		},
 		{
 			"key": "port",
 			"value": "5000",
-			"type": "default"
+			"type": "default",
+			"disabled": true
 		},
 		{
 			"key": "adminToken",
-			"value": ""
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im1JeHdoQkY0ckt2MUh4X2JHSWVnOCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sbGJlNDRqdHY2ZWs4djg4LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDY0ZTgwOWFkNzMyYWM4NmY1ZDdkZjciLCJhdWQiOiJlbnRlcnRhaW5tZW50IiwiaWF0IjoxNjg0NDE2OTUwLCJleHAiOjE2ODUyODA5NTAsImF6cCI6ImJTYk0yb1kwcUNJSVN1cnE3NDI1a2lWaVY5U2VkeG5zIiwiZ3R5IjoicGFzc3dvcmQiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YWN0b3IiLCJkZWxldGU6bW92aWUiLCJnZXQ6YWN0b3JzIiwiZ2V0OmFjdG9ycy1pbmZvIiwiZ2V0Om1vdmllcyIsImdldDptb3ZpZXMtaW5mbyIsInBhdGNoOmFjdG9yIiwicGF0Y2g6bW92aWUiLCJwb3N0OmFjdG9yIiwicG9zdDptb3ZpZSJdfQ.1kqpNuqMg9C2_QxzS6ipUyDB4e8wrUgW6AEZ6QyxnOgoHcHfPLKp_1G_V4ErIVejyfMY4Q6pWMBWlpQVRXcCk1fc8ErsLlK7K7HEQFv6VqP0MYvRtQOH9h4lAKprglaV2gQpd8jZAsfNNX2F9ObCZcxEWy5zlQaLbhmc_qURv-f9fLx_Ado7HClsGy_3wPfjREbr5x9oEg7tRP4WzNk48THQk3ZqnO4KCx6t4x3CD37_EMItP5JSLqVuE_p_e2wP-CgMLXVIXRLyak80zsd0y_bw1X-JEOjIBKmV1j8H756wWJ8upkADGSBiVFgGQXq8lTP4UlaIw1muhtZC_QAN5A"
 		},
 		{
 			"key": "managerToken",
-			"value": ""
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im1JeHdoQkY0ckt2MUh4X2JHSWVnOCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sbGJlNDRqdHY2ZWs4djg4LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDY0ZTg0NWQ3MGZjM2E2NGIwODU5ZGQiLCJhdWQiOiJlbnRlcnRhaW5tZW50IiwiaWF0IjoxNjg0NDE2OTUwLCJleHAiOjE2ODUyODA5NTAsImF6cCI6ImJTYk0yb1kwcUNJSVN1cnE3NDI1a2lWaVY5U2VkeG5zIiwiZ3R5IjoicGFzc3dvcmQiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0OmFjdG9ycy1pbmZvIiwiZ2V0Om1vdmllcyIsImdldDptb3ZpZXMtaW5mbyIsInBhdGNoOmFjdG9yIiwicGF0Y2g6bW92aWUiLCJwb3N0OmFjdG9yIiwicG9zdDptb3ZpZSJdfQ.Rq3oAr0DxwoE8JSFGQLtWVinAilo86yfA0YL3h0LaBgI2Zed220YrmF4W31eNMMKW6mqPJuyG9AecUtwYo4BeyIWpf8UWLOCnOHmVS37PSS6YswTLZzB08_kH01qmawwJQuVfDazDa5TGzUC8NWzvIiWuDI0cKQQv9IyloiNU2aZno3WS6KbpXZVVDFuXMHd_AuTy1nPlGy77jn95hfY0rDzT8e0T8XJmBABrvqin_p449VC4MRuON38Ij82lV_T9EVzZGVaapTGkFKdTPH0LlIwuZMtrZIzJD9lMMLWecmP1FdIQ0lPLqXSfGv_cli_7pE1FE83I0SYazciq0_Owg"
 		},
 		{
 			"key": "userToken",
-			"value": ""
+			"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im1JeHdoQkY0ckt2MUh4X2JHSWVnOCJ9.eyJpc3MiOiJodHRwczovL2Rldi1sbGJlNDRqdHY2ZWs4djg4LnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDY0ZTgyOTZkMzU0N2QxOWYyOTk3ZmEiLCJhdWQiOiJlbnRlcnRhaW5tZW50IiwiaWF0IjoxNjg0NDE2OTUwLCJleHAiOjE2ODUyODA5NTAsImF6cCI6ImJTYk0yb1kwcUNJSVN1cnE3NDI1a2lWaVY5U2VkeG5zIiwiZ3R5IjoicGFzc3dvcmQiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YWN0b3JzIiwiZ2V0OmFjdG9ycy1pbmZvIiwiZ2V0Om1vdmllcyIsImdldDptb3ZpZXMtaW5mbyJdfQ.WEuydUokRm8CYhyq7mrMjasptnvkfjqDvFpf19V2vnsawnW_KDaU-L9xb1bWP2cdkkEOyAg33WF7fOAOU7KF6eHY7LB9SJ-Lf5HWSFM7cb7S0okQjbDcsvH5Ql32aEI8FWytwZld2htTVeQbM0nghkIdlrWMgg6LFigsfpZtZ8JXziqOXmiSKjUiMM2ilZ4BMhQxX_whiFRFoYgVCkXYc27Ye2KQXE7RK1RR_jwJxVMhwGs1azVkW-g35LthPAg5X1CI3wsoFz4Lij6c3EwfeMeCIIAUye4d01e5cVjiU3TQuw1aGoBC7Q6XlXXdIq_qbj_qrRSjD-1ViXjb739Xsw"
 		}
 	]
 }
