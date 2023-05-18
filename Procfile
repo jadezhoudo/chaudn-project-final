@@ -1,1 +1,1 @@
-web: gunicorn chaudn-udacity-project:app
+web: gunicorn chaudn-udacity-project.wsgi:application
