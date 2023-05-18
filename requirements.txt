@@ -21,7 +21,6 @@ iniconfig
 isort
 itsdangerous
 Jinja2
-jose
 lazy-object-proxy
 Mako
 MarkupSafe
