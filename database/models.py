@@ -24,8 +24,7 @@ db = SQLAlchemy()
 def setup_db(app):
     """binds a flask application and a SQLAlchemy service"""
     app.config["SQLALCHEMY_DATABASE_URI"] = database_path
-    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-    app.json.compact = False
+    app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = SQLALCHEMY_TRACK_MODIFICATIONS
     # postgresql://postgres_deployment_example_u65m_user:c9uJmtgQVhSz6tlHdMHTd8vdGW69wuUO@dpg-chitteu4dad01ah3t3u0-a.singapore-postgres.render.com/postgres_deployment_example_u65m
     migrate = Migrate(app, db)
     db.app = app
